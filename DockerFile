@@ -14,8 +14,8 @@ services:
   magento:
     image: docker.io/bitnami/magento:2.4.0 #magento 2.4.0
     ports:
-      - '80:8080'
-      - '443:8443'
+      - '80:80'
+      - '443:443'
     environment:
       - MAGENTO_HOST=localhost
       - MAGENTO_DATABASE_HOST=mariadb
